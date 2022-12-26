@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 400px;
+  height: 100%;
+  background: linear-gradient(45deg, #9c9, #99c);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+header h1 {
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+  top: 30%;
+  left: 28px;
+  position: absolute;
+  transform: translateY(-150%);
+}
+header h1::after {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 2px;
+  background: #fff;
+  margin-top: 20px;
+}
+header h1::before {
+  content: "FRONTEND DEVELOPMENT";
+  display: block;
+  font-size: 14px;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 120px;
+  opacity: 0.8;
+}
+header ul {
+  position: absolute;
+  left: 40px;
+  bottom: 100px;
+}
+header ul li {
+  float: left;
+  margin-right: 35px;
+}
+header ul li a {
+  font-size: 15px;
+  color: #fff;
+}
+header ul li a i.hover {
+  transform: scale(0.5);
+}
+header ul li a i span {
+  display: inline-block;
+  opacity: 0.7;
+  transform: scale(0.7) translateX(-10px);
+}
